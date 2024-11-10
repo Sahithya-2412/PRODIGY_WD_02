@@ -1,0 +1,145 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', serif; /* Set font to Times New Roman */
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.stopwatch-container {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 70px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;  /* Adjusted the width */
+    height: 370px; /* Adjusted the height */
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.6em;  /* Reduced font size for the title */
+    color: #00eaff;
+    margin-bottom: 20px;
+}
+
+#display {
+    font-size: 2.5em;  /* Adjusted the display size */
+    font-family: 'Times New Roman', serif;
+    margin: 20px -20px;
+    color: #fff;
+    background-color: #333;
+    padding: 15px 25px;
+    border-radius: 10px;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    min-height: 60px;  /* Added to ensure the display area has a consistent height */
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6600;
+    color: white;
+    transition: all 0.3s ease;
+    width: 110px; /* Set a fixed width for buttons */
+}
+
+.controls button:hover {
+    background-color: #ff8000;
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+/* styles.css */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Needed to position lap times relative to the body */
+}
+
+/* Position lap times to the right side of the body */
+#lapTimes {
+    position: absolute; /* Absolute positioning */
+    right: 10px; /* Space from the right side of the screen */
+    top: 50%; /* Vertically center the lap records */
+    transform: translateY(-50%); /* Adjust the vertical positioning to be exact center */
+    background-color: #333;
+    padding: 15px;
+    width: 200px;
+    max-height: 80vh; /* Limit the height of the lap records */
+    overflow-y: auto; /* Scroll if there are too many laps */
+    color: #ccc;
+    border-radius: 8px;
+}
+
+#lapTimes h2 {
+    font-size: 1.5em;  /* Larger font size for the heading */
+    color: hsl(273, 73%, 83%);  /* Yellow color for contrast */
+    margin: 0 0 15px 0;  /* Space below the heading */
+    text-align: center;  /* Center-align the heading */
+    font-weight: bold;
+.lap-times ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+}
+
+.lap-times li {
+    font-size: 1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+.lap-times li:last-child {
+    border-bottom: none;
+}
+
+
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Ensures content (including footer) stacks vertically */
+}
+
+#footer {
+    width: 100%;
+    text-align: center; /* Centers the text horizontally */
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* Fixes the footer at the bottom of the page */
+    bottom: 0; /* Positions it at the bottom */
+    left: 0; /* Ensures it spans the full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin to prevent extra space */
+}
